@@ -1,0 +1,20 @@
+.box{
+    border: 1px solid black;
+    display: inline-block;
+    margin: 2%;
+    padding: 35px 12px 12px 12px;
+    text-align: center;
+    /* vertical-align: center; */
+    width: 200px;
+    height: 200px;
+}
+
+img{
+    width: 200px;
+    height: 110px;
+}
+.box p{    
+    vertical-align: center;
+    border-top: 1px solid black;
+    padding: 30px;
+}

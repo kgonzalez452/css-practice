@@ -1,0 +1,64 @@
+/* The * selects all elements. This is example selects all elements that are associated with example0 */
+.example0 * {
+    border: 1px solid black;
+}
+/* descendant selector */
+div span{
+    border: 3px dashed orange;
+}
+/* This is a pseudo selector adding styles to anchor tags before they are selected */
+.example6 a:link{
+    color:blue;
+}
+/* This is a pseudo selector adding styles to anchor tags after they are selected */
+.example6 a:visited{
+    color:purple;
+}
+/* This is a pseudo tag link that sets the styling for the link before */
+ul + p{
+    color: red;
+}
+/* Select the element that PRECEDS directly after the first */
+ul ~ p{
+    color: teal;
+}
+/* These selectors choose elements with specific attributes */
+a[href="google.com"]{
+    color: green;
+}
+
+a[href="bing.com"]{
+    color: greenyellow;
+}
+/* These select through elements that have certain characters, ^ is begeinning, $ is ending, * is all */
+a[href$=".io"]{
+    color: gray;
+}
+input[type=radio]:checked{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+/* Pseudo code hover is used when you mouseover certain elements. This turns all anchor to red */
+a:hover{
+    color: red;
+}
+
+ *:not(p){
+    color: rgb(0, 196, 196);
+} 
+
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: cursive;
+ }
+
+ li:nth-child(2){
+     border: 4px dotted red;
+ }
+
+li:last-child{
+    font-size: 5em;
+    border: 1px solid black;
+}   
